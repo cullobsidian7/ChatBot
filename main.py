@@ -41,11 +41,11 @@ async def kukiai(client: Client, message: Message):
 
 
 messageprivate = '''
-Hi, I'm Kuki Chat Bot
+Hi, I'm Chat Bot by Cull based on Kuki AI
 '''
 
 messagegroup = '''
-Hi, I'm Kuki Chat Bot
+Hi, I'm Chat Bot by Cull based on Kuki AI
 '''
 
 
@@ -60,9 +60,7 @@ async def start(_, message):
         await message.reply_text(messagegroup)
         return
     else:
-        buttons = [[InlineKeyboardButton("Github", url="https://github.com/MoeZilla/KukiChatBot"),
-                    ]]
-        await message.reply_text(messageprivate, reply_markup=InlineKeyboardMarkup(buttons))
+        await message.reply_text(messageprivate)
 
 
 
